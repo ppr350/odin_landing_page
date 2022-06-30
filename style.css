@@ -1,6 +1,7 @@
-body {
+html, body {
     font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     margin: 0;
 }
 
@@ -32,9 +33,12 @@ body {
 
 .behance-link,
 .info-image,
+.social,
 button {
     border-radius: 10px;
 }
+
+/*--------------------Header--------------------*/
 
 .title {
     font-size: 48px;
@@ -88,10 +92,23 @@ a {
     gap: 25px;
 }
 
+button {
+    background-color: #3882F6;
+}
+
+.sign-up {
+    height: 40px;
+    width: 120px;
+    font-size: 25px;
+    color: #F9FAF8;
+}
+
 .header-image {
     height: 300px;
     width: auto;
 }
+
+/*---------------------info----------------------*/
 
 .info-container {
     display: flex;
@@ -117,28 +134,19 @@ a {
     border: 2px solid #3882F6;
 }
 
-button {
-    background-color: #3882F6;
-    height: 40px;
-    width: 120px;
-    font-size: 25px;
-    color: #F9FAF8;
-}
+/*--------------------testimony-------------------*/
 
 .testimony {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 120px;
 }
 
 .info-header {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
-}
-
-.testimony {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 120px;
 }
 
 .comment {
@@ -152,15 +160,15 @@ button {
 .by-me {
     font-weight: 400;
     align-self: flex-end;
-
 }
+
+/*--------------------Social Media-------------------*/
 
 .social {
     font-size: 25px;
     color: #F9FAF8;
     background-color: #3882F6;
     margin: 60px 120px;
-    border-radius: 10px;
     display: flex;
     padding: 20px;
     justify-content: center;
@@ -193,6 +201,8 @@ button {
     padding: 40px;
 }
 
+/*--------------For smaller devices----------------*/
+
 @media screen and (max-width: 700px) {
     .hero {
         align-items: center;
@@ -202,8 +212,10 @@ button {
         text-align: center;
         align-self: center;
     }
-    .sign-up {
-        font-size: 15px;
+    .sign-up,
+    .behance-link {
+        text-align: center;
+        font-size: 20px;
     }
     .header-image {
         width: 300px;
@@ -218,8 +230,5 @@ button {
     }
     .want-more-follow {
         padding: 5px;
-    }
-    button {
-        text-align: center;
     }
 }
