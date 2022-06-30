@@ -197,6 +197,8 @@ button {
     }
     .title {
         font-size: 35px;
+        text-align: center;
+        align-self: center;
     }
     .header-image {
         width: 300px;
