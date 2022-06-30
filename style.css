@@ -189,3 +189,10 @@ button {
     color: #F9FAF8;
     padding: 40px;
 }
+
+@media screen and (max-width: 500px) {
+    .header-image {
+        width: 300px;
+        height: auto;
+    }
+}
