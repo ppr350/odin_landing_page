@@ -1,5 +1,5 @@
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     margin: 0;
 }
@@ -9,13 +9,11 @@ body {
     background-color: #1F2937;
 }
 
-/*.hero,*/
 .avatar-header-links {
     padding-left: 120px;
     gap: 15px;
 }
 
-/*.header-image,*/
 .header-links {
     margin-left: auto;
     padding-right: 120px;
@@ -28,8 +26,7 @@ body {
 }
 
 .footer,
-.info-header,
-.text {
+.info-header {
     text-align: center;
 }
 
@@ -110,6 +107,11 @@ a {
     justify-content: center;
 }
 
+.text {
+    color: grey;
+    text-align: center;
+}
+
 .info-image {
     width: 250px;
     border: 2px solid #3882F6;
@@ -141,16 +143,16 @@ button {
 
 .comment {
     font-size: 36px;
-    font-family: 'Courier New', Courier, monospace;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: light;
     align-self: center;
     max-width: 1000px;
 }
 
 .by-me {
-    font-weight: 800;
+    font-weight: 400;
     align-self: flex-end;
+
 }
 
 .social {
@@ -200,6 +202,9 @@ button {
         text-align: center;
         align-self: center;
     }
+    .sign-up {
+        font-size: 15px;
+    }
     .header-image {
         width: 300px;
         height: auto;
@@ -213,5 +218,8 @@ button {
     }
     .want-more-follow {
         padding: 5px;
+    }
+    button {
+        text-align: center;
     }
 }
